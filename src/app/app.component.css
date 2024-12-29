@@ -1,0 +1,17 @@
+/* Damos color de fondo al HTML global (componente 'component') */
+body {
+    background-color: cornsilk;
+}
+  
+/* Damos estilo al elemento DIV */
+div {
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+    background-color: rgb(209, 186, 186);
+    box-shadow: 0px 0px 103px 6px rgba(0,0,0,0.25) inset;
+    -webkit-box-shadow: 0px 0px 103px 6px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 0px 0px 103px 6px rgba(0,0,0,0.75) inset;
+    margin: auto;
+    margin-top: 2.14em;
+    width: 40%;
+    padding: 10px;
+}

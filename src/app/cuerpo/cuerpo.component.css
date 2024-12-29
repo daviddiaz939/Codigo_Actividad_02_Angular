@@ -1,0 +1,49 @@
+/* Damos estilo a las imagenes que metamos con la clase "smallimg" */
+img.smallimg {
+    width: 70%;
+}
+
+/* Damos estilo a los elementos HTML que metamos con la clase "margintop" */
+.margintop {
+    margin-top: 2.15em;
+}
+
+/* Damos estilo a los elementos H1 que metamos con la clase "margintoph11" */
+h1.margintoph11 {
+    margin-top: 1.15em;
+}
+
+/* Damos estilo al elemento PRE */
+pre {
+    margin-top: 56px;
+    border: 1px solid #E5E5E5;
+    padding: auto;
+    font-family: source-code-pro, Menlo, Monaco, "Courier New", Courier, monospace;
+    overflow-x: auto;
+    border-radius: 4px;
+    color: black;
+    background:white;
+    margin: 0;
+    box-sizing: inherit;
+    display: block;
+    font-family: monospace;
+    unicode-bidi: isolate;
+    white-space: pre;
+    margin: 1em 0px;
+}
+
+/* Damos estilo al elemento PRE */
+span {
+    min-width: fit-content;
+    white-space: pre;
+    margin-bottom: -0.2em;
+    margin-top: -0.2em;
+    letter-spacing: -0.022em;
+    line-height: 1.4;
+    font-family: source-code-pro, Menlo, Monaco, "Courier New", Courier, monospace;
+    font-style: normal;
+    font-size: 14px;
+    display: block;
+    font-weight: 400;
+    box-sizing: inherit;
+}

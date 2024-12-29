@@ -1,0 +1,452 @@
+<!-- Referenciamos el componente "perfil -->
+<app-perfil></app-perfil>
+
+<!-- Metemos un elemento DIV -->
+<div class="margintop">
+
+    <!-- Introducción de cabecera -->
+    <h1 class="margintoph11">
+        - ¿Qué es un framework?
+    </h1>
+
+    <!-- Introducción de texto -->
+    <p>
+        Un framework es “un marco de trabajo que ofrece una estructura base
+        para elaborar un proyecto con objetivos específicos”; en este caso,
+        se podría decir que es “una especie de plantilla que sirve como
+        punto de partida para la organización y desarrollo de software”.
+    </p>
+  
+    <!-- Introducción de texto -->
+    <p>
+        Un framework permite “acometer un proyecto de software en menos tiempo”,
+        consiguiendo tener un código más limpio y ordenado, consistente y reutilizable,
+        ya que muchos elementos están estructurados como módulos que se puede reutilizar.
+    </p>
+
+    <!-- Introducción de texto -->
+    <p>
+        Un framework, en este caso Angular, tiene como aplicación u objetivo elaborar proyectos de programación,
+        en este caso desarrollar aplicaciones de tipo web.
+    </p>
+
+    <!-- Introducción de texto -->
+    <p>
+        Angular es un framework de JavaScript de código abierto escrito en TypeScript.
+        Esto quiere decir que el propio framework de Angular está programado en TypeScript,
+        pero el usuario que emplea dicho framework programa en JavaScript.
+    </p>
+
+    <!-- Introducción de texto -->
+    <p>
+        Para trabajar con Angular, el usuario deberá estar familiarizado con los lenguajes HTML, CSS y JavaScript.
+        Además, el usuario deberá tener instalado en su equipo el gestor de paquetes Node.js (npm)
+        para ejecutar y desplegar las herramientas de JavaScript fuera del navegador web.
+    </p>
+
+    <!-- Introducción de cabecera -->
+    <h1 class="margintop">
+        - ¿Cómo instalar Angular?
+    </h1>
+
+    <!-- Introducción de texto -->
+    <p>
+        Para instalar Angular, tal y como hemos comentado en el apartado anterior,
+        debemos instalar el gestor de paquetes Node.js (npm) y, a través de él, instalar el framework de Angular.
+    </p>
+
+    <!-- Introducción de texto -->
+    <p>
+        Lo primero de todo, para la instalación de Angular,
+        deberemos <a href="https://nodejs.org/es"> acceder a la página web de Node.js</a> e instalar dicho gestor de paquetes.
+    </p>
+
+    <!-- Cargamos foto -->
+    <img class="smallimg" src="Node.png">
+
+    <!-- Recuadro de comando + Foto -> PRE + SPAN + IMG -->
+    <div>
+        <!-- Introducción de texto -->  
+        <p class="margintop">
+            Una vez instalado Node.js, si tenemos Windows como O.S,
+            deberemos abrir PoweShell para habilitar la ejecución de Scripts en el equipo y poder instalar de manera correcta Angular.
+            En PoweShell deberemos lanzar el siguiente comando:
+        </p>
+
+        <!-- Elemento de texto pre-formateado -->
+        <pre>
+
+            <!-- Elemento SPAN -->
+            <span>
+                # Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+            </span>
+
+        </pre>
+
+        <!-- Cargamos foto -->
+        <img src="Scripts_PS.png">
+    </div>
+
+    <!-- Recuadro de comando + Foto -> PRE + SPAN + IMG -->
+    <div>
+        <!-- Introducción de texto -->
+        <p class="margintop">
+            Tras ello, deberemos abrir una consola de comandos (CMD o Terminal) y lanzar el siguiente comando en ella:
+        </p>
+
+        <!-- Elemento de texto pre-formateado -->
+        <pre>
+
+            <!-- Elemento SPAN -->
+            <span>
+                $ npm install -g &#64;angular/cli
+            </span>
+            
+        </pre>
+
+        <!-- Cargamos foto -->
+        <img class="smallimg" src="Install_Angular.png">
+    </div>
+
+    <!-- Recuadro de comando + Foto -> PRE + SPAN + IMG -->
+    <div>
+        <!-- Introducción de texto -->
+        <p class="margintop">
+            En este caso, tras la instalación, podemos ver que estamos trabajando con las últimas versiones de:<br>
+            - Angular (v19.0.6)<br>
+            - Node.js (v22.12.0)<br>
+            - npm (v11.0.0)<br>
+            - Windows (v11 x64 bit)
+        </p>
+
+        <!-- Elemento de texto pre-formateado -->
+        <pre>
+
+            <!-- Elemento SPAN -->
+            <span>
+                $ ng v
+            </span>
+
+        </pre>
+
+        <!-- Cargamos foto -->
+        <img src="Versions.png">
+    </div>
+
+    <!-- Recuadro de comando + Foto -> PRE + SPAN + IMG -->
+    <div>
+        <!-- Introducción de texto -->
+        <p class="margintop">
+            Tras la instalación, trabajaremos con las siguientes variables de entorno para Node y Angular:
+        </p>
+
+        <!-- Elemento de texto pre-formateado -->
+        <pre>
+
+            <!-- Elemento SPAN -->
+            <span>
+                C:\Program Files\nodejs
+                C:\Users\your_username\AppData\Roaming\npm\node_modules\npm\bin
+                C:\Users\your_username\AppData\Roaming\npm\node_modules\&#64;angular\cli\bin
+            </span>
+
+        </pre>
+
+        <!-- Cargamos foto -->
+        <img src="Variables.png">
+    </div>
+
+    <!-- Introducción de cabecera -->
+    <h1 class="margintop">
+        - Creando nuestra primera aplicación Angular (Hello, World!)
+    </h1>
+
+    <!-- Recuadro de comando + Foto -> PRE + SPAN + IMG -->
+    <div>
+        <!-- Introducción de texto -->
+        <p class="margintop">
+            Para crear una aplicación base en Angular, una vez instalado el framework,
+            lo primero que deberemos hacer es abrir la consola de comandos (CMD o Terminal) y lanzar el siguiente comando en ella:
+        </p>
+
+        <!-- Elemento de texto pre-formateado -->
+        <pre>
+
+            <!-- Elemento SPAN -->
+            <span>
+                $ ng new --no-standalone my-app
+            </span>
+
+        </pre>
+
+        <!-- Cargamos foto -->
+        <img class="smallimg" src="New_App.png">
+    </div>
+
+    <!-- Recuadro de comando + Foto -> PRE + SPAN + IMG -->
+    <div>
+        <!-- Introducción de texto -->
+        <p class="margintop">
+            Una vez creada la aplicación, nos situaremos en el workspace de dicha app mediante el siguiente comando:
+        </p>
+
+        <!-- Elemento de texto pre-formateado -->
+        <pre>
+
+            <!-- Elemento SPAN -->
+            <span>
+                $ cd new my-app
+            </span>
+
+        </pre>
+
+        <!-- Cargamos foto -->
+        <img class="smallimg" src="CD_App.png">
+    </div>
+
+    <!-- Recuadro de comando + Foto -> PRE + SPAN + IMG -->
+    <div>
+        <!-- Introducción de texto -->
+        <p class="margintop">
+            Una vez hechos todos los pasos seguidos anteriormente,
+            tan solo debemos ejecutar el siguiente comando desde la consola de comandos (CMD o Terminal)
+            para poder visualizar la aplicación desde el navegador:
+        </p>
+
+        <!-- Elemento de texto pre-formateado -->
+        <pre>
+
+            <!-- Elemento SPAN -->
+            <span>
+                $ ng serve --open
+            </span>
+
+        </pre>
+
+        <!-- Cargamos foto -->
+        <img class="smallimg" src="Hello_My_App.png">
+    </div>
+
+    <!-- Introducción de cabecera -->
+    <h1 class="margintop">
+        - Explorando Angular... ¿cómo funciona por dentro?
+    </h1>
+
+    <!-- Introducción de texto -->
+    <p class="margintop">
+        Para crear una aplicación base en Angular, una vez instalado el framework,
+        lo primero que deberemos hacer es abrir la consola de comandos (CMD o Terminal) y lanzar el siguiente comando en ella:
+    </p>
+
+    <!-- Introducción de texto -->
+    <p>
+        En este fichero, en la línea que contenga el elemento &lt;title&gt;, viene indicado el título o nombre de la aplicación que hemos creado.
+        En nuestro caso le dimos el nombre de my-app y vemos que Angular nos configura el título como MyApp.
+    </p>
+
+    <!-- Introducción de texto -->
+    <p>
+        Por otro lado, vemos que en el body del HTML viene indicado solamente en tag de &lt;app-root&gt;.
+        Este tag apunta a otro fichero llamado app.component.ts,
+        el cual es el componente de la aplicación de Angular desde el cual se cargan los HTML, CSS, etc.
+    </p>
+
+    <!-- Cargamos foto -->
+    <img class="smallimg" src="Index_HTML.png">
+
+    <!-- Introducimos texto -->
+    <p class="margintop">
+        El siguiente fichero que revisaremos será el comentado anteriormente: ~/my-app/src/app/app.component.ts.
+        En este fichero podemos observar tag de &lt;app-root&gt; comentado anteriormente.
+        En este componente están referenciados, a su vez, las plantillas de HTML y CSS que va a usar la app de Angular.
+        También exporta el título o nombre de la app (my-app) en una variable hacia el fichero app.component.html mediante el export final.
+    </p>
+
+    <!-- Cargamos foto -->
+    <img class="smallimg" src="App_Component_TS.png">
+
+    <!-- Introducimos texto -->
+    <p class="margintop">
+        Otro fichero importante es app.modules.ts.
+        Este fichero se genera al hacer una instalación atendida (parámetro --no-standalone) que hemos utilizado antes al generar la aplicación.
+        Es interesante utilizar este parámetro porque, por ejemplo,
+        todos los componentes que generemos nuevos en nuestra aplicación se declararán automáticamente en este fichero.
+        Otra utilidad de este fichero también es la de importar módulos,
+        los cuales darán funcionalidades a nuestra app, como el módulo de Formularios (FormsModule).
+        En este caso, están instalados los módulos de Navegador (BrowserModule) y AppRouting (AppRoutingModule).
+    </p>
+
+    <!-- Cargamos foto -->
+    <img class="smallimg" src="App_Module_TS.png">
+
+    <!-- Introducimos texto -->
+    <p class="margintop">
+        Los otros ficheros importantes que quedan son los ficheros app.component.html y app.component.css,
+        los cuales son los plantillas en las que escribiremos el código HTML y CSS de nuestra app,
+        al margen de los componentes que podamos crear al margen del por defecto.
+    </p>
+
+    <!-- Introducción de cabecera -->
+    <h1 class="margintop">
+        - Creando componentes en Angular...
+    </h1>
+
+    <!-- Recuadro de comando + Foto -> PRE + SPAN + IMG -->
+    <div>
+        <!-- Introducción de texto -->
+        <p class="margintop">
+            Una vez que hemos hecho nuestra primera aproximación a Angular creando nuestra primera aplicación (Hello, World!), vamos a crear una aplicación más avanzada.
+            Para ello, vamos a crear un nuevo componente en Angular ejecutando el siguiente comando desde la consola de comandos (CMD o Terminal):
+        </p>
+        
+        <!-- Elemento de texto pre-formateado -->
+        <pre>
+
+            <!-- Elemento SPAN -->
+            <span>
+                $ ng generate component my-component
+            </span>
+
+        </pre>
+
+        <!-- Cargamos foto -->
+        <img class="smallimg" src="Generate_My_Component.png">
+    </div>
+
+    <!-- Texto + IMG -->
+    <div>
+        <!-- Introducción de texto -->
+        <p class="margintop">
+            Como podemos ver en la foto anterior, se ha generado un nuevo directorio llamado my-component.
+            En los ficheros HTML y CSS de este directorio será donde trabajaremos con el código HTML y CSS.
+            De la misma manera, se ha actualizado el fichero app.module.ts. En este fichero se ha referenciado de manera automática el nuevo componente creado.
+        </p>
+
+        <!-- Cargamos foto -->
+        <img class="smallimg" src="App_Module_TS_My_Component.png">
+    </div>
+
+    <!-- Introducimos texto -->
+    <p class="margintop">
+        Una vez hemos creado nuestro nuevo componente, procedemos a editar los ficheros HTML y CSS del nuevo componente my-component creado.
+        Los vamos mostrando uno a uno.
+    </p>
+
+    <!-- Texto + IMG -->
+    <div>
+        <!-- Introducción de texto -->
+        <p>
+            Lo primero de todo, mostramos el fichero my-component.component.ts del nuevo componente creado.
+            Este fichero no hace falta editarlo, pues contiene referenciados los ficheros HTML y CSS,
+            en los cuales se editará el código HTML y CSS para este componente.
+        </p>
+
+        <!-- Cargamos foto -->
+        <img class="smallimg" src="My_Component_Component_TS.png">
+    </div>
+
+    <!-- Texto + IMG -->
+    <div>
+        <!-- Introducción de texto -->
+        <p class="margintop">
+            Tras este fichero, tenemos el fichero my-component.component.html, en el cual se editará el código HTML.
+        </p>
+
+        <!-- Cargamos foto -->
+        <img src="My_Component_Component_HTML.png">
+    </div>
+
+    <!-- Texto + IMG -->
+    <div>
+        <!-- Introducción de texto -->
+        <p class="margintop">
+            Por último, tenemos el fichero my-component.component.css, en el cual se editará el código CSS.
+        </p>
+
+        <!-- Cargamos foto -->
+        <img src="My_Component_Component_CSS.png">
+    </div>
+
+    <!-- Recuadro de comando + Foto -> PRE + SPAN + IMG -->
+    <div>
+        <!-- Introducción de texto -->
+        <p class="margintop">
+            Una vez tenemos editados todos estos ficheros, tal y como podemos ver en las capturas anteriores,
+            tenemos que volver al fichero HTML del componente component por defecto (app.component.html) para refrenciar este nuevo componente creado.
+            Esta es la idea principal de Angular, el del trabajo por componentes, lo cual hace que ganemos en modularidad.
+            Referenciarlo será tan sencillo como implementar el siguiente tag:
+        </p>
+
+        <!-- Elemento de texto pre-formateado -->
+        <pre>
+
+            <!-- Elemento SPAN -->
+            <span>
+                &lt;app-my-component&gt;&lt;/app-my-component&gt;
+            </span>
+
+        </pre>
+
+        <!-- Cargamos foto -->
+        <img src="App_Component_HTML.png">
+    </div>
+
+    <!-- Recuadro de comando + Foto -> PRE + SPAN + IMG -->
+    <div>
+        <!-- Introducción de texto -->
+        <p class="margintop">
+            Tras hacer lo comentado anteriormente, ya estamos listos para desplegar la aplicación y visualizarla desde nuestro navegador web:
+        </p>
+
+        <!-- Elemento de texto pre-formateado -->
+        <pre>
+
+            <!-- Elemento SPAN -->
+            <span>
+                ng serve --open
+            </span>
+
+        </pre>
+
+        <!-- Cargamos foto -->
+        <img class="smallimg" src="My_Component_Browser.png">
+    </div>
+
+    <!-- Introducción de cabecera -->
+    <h1 class="margintop">
+        - AGRADECIMIENTOS
+    </h1>
+
+    <!-- Introducción de texto -->
+    <p class="margintop">
+        Me gustaría agradecer en este apartado a mi amigo, <b>Asier Salicio Vicente</b>, quien es programador en Angular,
+        pues gracias a su ayuda y su enseñanza ha sido posible la elaboración de esta página web en Angular.
+    </p>
+
+    <!-- Introducción de cabecera -->
+    <h1 class="margintop">
+        - BIBLIOGRAFÍA
+    </h1>
+
+    <!-- Introducimos Hipervínculo -->
+    <a href="https://unirfp.unir.net/revista/ingenieria-y-tecnologia/framework/"> Framework: qué es, para qué sirve y algunos ejemplos | UNIR FP </a><br><br>
+
+    <!-- Introducimos Hipervínculo -->
+    <a href="https://www.hiberus.com/crecemos-contigo/que-es-angular-y-para-que-sirve/"> ¿Qué es Angular y para qué sirve? - Blog de hiberus </a><br><br>
+
+    <!-- Introducimos Hipervínculo -->
+    <a href="https://angular.dev/tools/cli/setup-local"> Local set-up - Angular </a><br><br>
+
+    <!-- Introducimos Hipervínculo -->
+    <a href="https://nodejs.org/es"> Descargar Node.js </a><br><br>
+
+    <!-- Introducimos Hipervínculo -->
+    <a href="https://stackoverflow.com/questions/37991556/ng-is-not-recognized-as-an-internal-or-external-command"> windows 7 - ng is not recognized as an internal or external command - Stack Overflow </a><br><br>
+
+    <!-- Introducimos Hipervínculo -->
+    <a href="https://docs.angular.lat/guide/architecture-components"> Angular - Introducción a componentes y plantillas </a><br><br>
+
+    <!-- Introducimos Hipervínculo -->
+    <a href="https://medium.com/@Rushabh_/step-by-step-guide-building-your-first-angular-app-from-scratch-ce554ee9a660"> Step-by-Step Guide: Building Your First Angular App from Scratch | by Rushabh Dabhade | Medium </a>
+
+</div>

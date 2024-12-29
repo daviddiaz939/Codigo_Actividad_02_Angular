@@ -1,0 +1,38 @@
+/* Damos estilo a las imagenes de este componente */
+img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* Damos estilo a los DIV de este componente */
+div {
+    display: flex;
+    background-color: cornsilk;
+    padding: 20px;
+    box-shadow: 0px 0px 103px 6px rgba(0,0,0,0.25) inset;
+    -webkit-box-shadow: 0px 0px 103px 6px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 0px 0px 103px 6px rgba(0,0,0,0.75) inset;
+}
+
+/* Damos estilo a los H1 de este componente */
+h1 {
+    margin: 20px;
+}
+
+/*
+    Damos estilo al botón de buscarW
+    Color del botón beige, forma ovalada y el cursor se pone en forma de mano (click)
+*/
+.botonBuscar {
+    background-color: beige;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*
+    Damos estilo al botón de buscar
+    Boton de buscar se pone de color ocre cuando pasamos el raton por encima de él
+ */
+.botonBuscar:hover {
+    background-color: navajowhite;
+}
